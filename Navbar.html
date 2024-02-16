@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back Arrow Navigation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #007bff;
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+      }
+      .back-arrow {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back-arrow" onclick="goBack()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+      </div>
+      <span>Back</span>
+    </div>
+
+    <div style="padding: 20px">
+      <h1>Welcome to my page!</h1>
+      <p>This is a simple HTML page with a back arrow in the navigation bar.</p>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
